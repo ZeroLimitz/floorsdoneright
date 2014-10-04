@@ -31,7 +31,7 @@ function boiler_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'boiler' ),
+		'primary' => __( 'Header', 'boiler' ),
 	) );
 
 	/**
@@ -139,7 +139,7 @@ function boiler_scripts_styles() {
 	//wp_enqueue_script( 'boiler-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20120206', true );
 
 	//wp_enqueue_script( 'boiler-main', get_template_directory_uri() . '/js/main.js', array(), '20120205', true );
-	
+
 	// Return concatenated version of JS. If you add a new JS file add it to the concatenation queue in the gruntfile. 
 	// current files: js/vendor.mordernizr-2.6.2.min.js, js/plugins.js, js/main.js
 	wp_enqueue_script( 'boiler-concat', get_template_directory_uri() . '/js/built.min.js', array(), '', true );

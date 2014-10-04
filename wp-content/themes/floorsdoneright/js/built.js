@@ -44,5 +44,5 @@ var loadReload = function() {
 	if(localDev == true) {
 		loadReload();
 	}
-	
+
 });

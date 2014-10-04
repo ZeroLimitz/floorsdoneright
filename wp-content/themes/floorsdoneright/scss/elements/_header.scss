@@ -1,19 +1,49 @@
 #global_header {
-	padding: 1rem 0 0;
-	border-bottom: 2px solid $charcoal;
+	border-bottom: 1px solid black;
 
-	ul {
-		list-style: none;
+	.logo {
+		@include span-columns(12);
+		text-align: center;
 
-		li {
-			background: $charcoal;
-			float: left;
+		img {
+			width: 50%;
+			height: auto;
+			display: inline-block;
+		}
+	}
 
-			a {
-				display: inline-block;
-				color: $white;
-				padding: 1rem;
+	.main_nav {
+		@include span-columns(12);
+		text-align: center;
+
+		ul {
+			@include clearfix;
+			list-style: none;
+			border-bottom: 2px solid black;
+
+			li {
+				@include span-columns(2.4);
+				border-left: 2px solid black;
+
+				&:last-child {
+					border-right: 2px solid black;
+				}
+
+				a {
+					color: black;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
 			}
+		}
+	}
+
+	.header_image {
+		@include span-columns(12);
+
+		img {
+			width: 100%;
+			height: auto;
 		}
 	}
 }

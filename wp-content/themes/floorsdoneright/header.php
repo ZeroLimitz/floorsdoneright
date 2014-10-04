@@ -18,7 +18,7 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 
@@ -27,11 +27,14 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-	<header id="global_header">
+	<header class="wrapper" id="global_header">
 		<div class="container">
-			<h1 id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<nav role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'header_menu' ) ); // remember to assign a menu in the admin to remove the container div ?>
+			<div class="logo"><img src="<?php echo bloginfo('template_url'); ?>/images/67701079.png" /></div>
+			<nav class="main_nav">
+				<?php wp_nav_menu(array('theme_location' => 'Header')); ?>
 			</nav>
+			<div class="header_image">
+				<img src="<?php echo bloginfo('template_url'); ?>/images/flooring.png" />
+			</div>
 		</div>
 	</header>

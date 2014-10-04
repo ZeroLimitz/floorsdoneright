@@ -5,6 +5,7 @@
 }
 
 html {
+	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
 	font-size: 62.5%;
 }
@@ -15,14 +16,14 @@ body {
 	color: $charcoal;
 }
 
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 a {
 	text-decoration: none;
-	@include transition(color 1s ease-in);
-	color: $orange;
-
-	&:hover {
-		color: darken($orange, 5%);
-	}
 }
 
 ::selection {
