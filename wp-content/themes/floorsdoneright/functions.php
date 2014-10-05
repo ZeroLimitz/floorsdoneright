@@ -31,7 +31,7 @@ function boiler_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Header', 'boiler' ),
+		'Header' => __( 'Header', 'boiler' ),
 	) );
 
 	/**
@@ -131,6 +131,7 @@ add_action( 'widgets_init', 'boiler_widgets_init' );
 function boiler_scripts_styles() {
 	// style.css just initializes the theme. This is compiled from /sass
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/main.css');
+	wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/css/vendor/flexslider.css');
 
 	wp_enqueue_script( 'jquery' , array(), '', true );
 
@@ -139,7 +140,7 @@ function boiler_scripts_styles() {
 	//wp_enqueue_script( 'boiler-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20120206', true );
 
 	//wp_enqueue_script( 'boiler-main', get_template_directory_uri() . '/js/main.js', array(), '20120205', true );
-
+	wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/js/vendor/jquery.flexslider-min.js', array(), '', true );
 	// Return concatenated version of JS. If you add a new JS file add it to the concatenation queue in the gruntfile. 
 	// current files: js/vendor.mordernizr-2.6.2.min.js, js/plugins.js, js/main.js
 	wp_enqueue_script( 'boiler-concat', get_template_directory_uri() . '/js/built.min.js', array(), '', true );

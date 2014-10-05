@@ -44,5 +44,11 @@ var loadReload = function() {
 	if(localDev == true) {
 		loadReload();
 	}
+	$(window).load(function(){
+		
+		$('.flexslider').flexslider({
+			animation: "slide"
+		});
+	});
 
 });

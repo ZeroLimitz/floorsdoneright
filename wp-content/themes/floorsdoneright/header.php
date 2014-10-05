@@ -33,8 +33,5 @@
 			<nav class="main_nav">
 				<?php wp_nav_menu(array('theme_location' => 'Header')); ?>
 			</nav>
-			<div class="header_image">
-				<img src="<?php echo bloginfo('template_url'); ?>/images/flooring.png" />
-			</div>
 		</div>
 	</header>

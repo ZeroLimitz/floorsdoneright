@@ -1,3 +1,37 @@
-.placeholder {
-	min-height: 400px;
+.home_top {
+
+	.flexslider {
+		border: 0px;
+		box-shadow: none;
+		margin: 0px;
+
+		.flex-direction-nav {
+			top: 50%;
+			margin-top: -27px;
+			height: 60px;
+			width: 100%;
+			position: absolute;
+		}
+	}
+}
+
+.one {
+	background-color: #f4f2f0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+
+	.one_content {
+
+		.two_column {
+			@include clearfix;
+			
+			.column {
+				@include span-columns(6);
+
+				&:last-child {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
 }

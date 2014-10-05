@@ -2,6 +2,7 @@
 .container {
 	@extend %post;
 	// Set max-width here
+	padding: 0px 20px;
 
 	.content {
 		@include span-columns(8);
@@ -14,6 +15,12 @@
 	}
 }
 
+.section_title {
+	@include span-columns(12);
+	text-align: center;
+	margin-bottom: 20px;
+}
+
 .wrapper {
-	background-color: darken(#0A5C96 , 10%);
+	background-color: lighten(#002240, 5%);
 }

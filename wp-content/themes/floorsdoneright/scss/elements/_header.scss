@@ -1,5 +1,4 @@
 #global_header {
-	border-bottom: 1px solid black;
 
 	.logo {
 		@include span-columns(12);
@@ -19,7 +18,6 @@
 		ul {
 			@include clearfix;
 			list-style: none;
-			border-bottom: 2px solid black;
 
 			li {
 				@include span-columns(2.4);
@@ -27,12 +25,12 @@
 
 				&:last-child {
 					border-right: 2px solid black;
+					margin-right: 0px;
 				}
 
 				a {
-					color: black;
-					text-transform: uppercase;
-					font-weight: bold;
+					color: white;
+					text-transform: capitalize;
 				}
 			}
 		}

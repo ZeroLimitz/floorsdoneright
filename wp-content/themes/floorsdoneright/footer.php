@@ -6,7 +6,7 @@
  */
 ?>
 
-	<footer id="global_footer" class="site_footer">
+	<footer id="global_footer" class="site_footer wrapper">
 		<div class="container">
 			<p class="copy">&copy; <?php echo date('Y'); ?> <?php bloginfo('site_title'); ?></p>
 		</div>
